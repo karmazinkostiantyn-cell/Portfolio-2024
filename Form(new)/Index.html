@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css">
+    <title>From(new)</title>
+</head>
+<body>
+    <form action="">
+
+        <h1>Write a message</h1>
+        
+        <div class="row">
+
+            <div class="element">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Type here...">
+            </div>
+            
+            <div class="element">
+                <label for="birthday">Birthday</label>
+                <input type="text" id="birthday" name="birthday" placeholder="Select..." onfocus="(this.type='date')" onblur="(this.type='text')">
+            </div>
+            
+        </div>
+        
+        <div class="row">
+
+            <div class="element">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="e.g. Bug in portfolio">
+            </div>
+            
+            <div class="element">
+                <fieldset>
+                    <legend>Gender</legend>
+
+                    <div class="row">
+                        <div class="element">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                       
+                        <div class="element">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+    
+                        <div class="element">
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+
+        </div>
+        
+        <div class="element">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="e.g. Links in the main menu of portfolio do not direct you to corresponding sections"></textarea>
+        </div>
+
+        <div class="element2">
+            <button type="submit">SEND</button>
+        </div>
+
+    </form>
+</body>
+</html>
